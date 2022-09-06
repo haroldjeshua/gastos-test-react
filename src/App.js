@@ -22,7 +22,7 @@ function App() {
 				<BudgetCard
 					name="Entertainment"
 					grey
-					amount={600}
+					amount={420}
 					max={1000}
 				></BudgetCard>
 			</div>
