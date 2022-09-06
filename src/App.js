@@ -19,7 +19,12 @@ function App() {
 				}}
 			>
 
-				<BudgetCard name="Entertainment" amount={600} max={1000}></BudgetCard>
+				<BudgetCard
+					name="Entertainment"
+					grey
+					amount={600}
+					max={1000}
+				></BudgetCard>
 			</div>
 		</Container>
 	);
