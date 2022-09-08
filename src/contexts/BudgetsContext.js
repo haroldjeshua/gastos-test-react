@@ -1,8 +1,10 @@
 import React, { useContext } from "react"
-import { v4 as uuidV4 } from  'uuid'
+import { v4 as uuidV4 } from  "uuid"
 import useLocaleStorage from "../hooks/useLocalStorage"
 
 const BudgetsContext = React.createContext()
+
+export const UNCATEGORIZED_BUDGET_ID = 'Uncategorized'
 
 export function useBudgets() {
     return useContext(BudgetsContext)
