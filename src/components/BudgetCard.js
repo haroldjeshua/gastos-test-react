@@ -16,9 +16,9 @@ export default function BudgetCard({ name, amount, max, grey, onAddExpenseClick}
 					<div className="me-2">{name}</div>
 					<div className="d-flex align-items-baseline">
 						{currencyFormatter.format(amount)} 
-						<span className="text-muted fs-6 ms-1">
+						{max && <span className="text-muted fs-6 ms-1">
 							/ {currencyFormatter.format(max)}
-						</span>
+						</span>}
 					</div>
 				</Card.Title>
 				<ProgressBar
