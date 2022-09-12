@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Button, Stack }from "react-bootstrap"
 import Container from "react-bootstrap/Container"
 import AddBudgetModal from "./components/AddBudgetModal";
-import AddExpenseModal from "./components/addExpenseModal";
+import AddExpenseModal from "./components/AddExpenseModal";
 import BudgetCard from "./components/BudgetCard";
-import TotalBudgetCard from "./components/TotalBudgetCard";
 import UncategorizedBudgetCard from "./components/UncategorizedBudgetCard";
+import TotalBudgetCard from "./components/TotalBudgetCard";
 import { useBudgets } from "./contexts/BudgetsContext";
 
 function App() {
