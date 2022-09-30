@@ -48,7 +48,10 @@ export const BudgetsProvider = ({ children }) => {
     function deleteBudget({ id }) {
         // TODO: Deal with expenses
         setBudgets(prevBudgets => {
-            return prevBudgets.filter(budget => budget.id !== id)
+            return prevBudgets.map(expense => {
+                if (expense.budgetId !== id) return expense
+                return { ...expense, budgetId: UNCATEGORIZED_BUDGET_ID }
+            })
         })
     }
     function deleteExpense({ id }) {
